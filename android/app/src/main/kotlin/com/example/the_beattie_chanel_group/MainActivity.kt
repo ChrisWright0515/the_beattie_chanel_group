@@ -1,4 +1,4 @@
-package com.example.the_beattie_chanel_group
+package com.beattiechanelgroup.realestate
 
 import io.flutter.embedding.android.FlutterActivity
 

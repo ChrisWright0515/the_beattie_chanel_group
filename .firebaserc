@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "the-beattie-chanel-group",
+    "beattie-chanel-dev": "the-beattie-chanel-group"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
