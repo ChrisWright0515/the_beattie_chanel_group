@@ -6,7 +6,7 @@ import '../screens/welcome/welcome_screen.dart';
 import 'button.dart';
 
 class LogoutButton extends StatelessWidget {
-  const LogoutButton({Key? key}) : super(key: key);
+  const LogoutButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class LogoutButton extends StatelessWidget {
           padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
           iconPadding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
           color: Theme.of(context).colorScheme.secondary,
-          textStyle: TextStyle(
+          textStyle: const TextStyle(
             fontFamily: 'Plus Jakarta Sans',
             color: Colors.white,
             fontSize: 16,

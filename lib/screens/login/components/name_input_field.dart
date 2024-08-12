@@ -32,10 +32,10 @@ class NameInputField extends StatefulWidget {
   final FocusNode focusNode;
 
   const NameInputField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.focusNode,
-  }) : super(key: key);
+  });
 
   @override
   _NameInputFieldState createState() => _NameInputFieldState();

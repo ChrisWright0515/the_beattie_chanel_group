@@ -12,8 +12,8 @@ class AccountOptionItem extends StatelessWidget {
     required this.text,
     required this.onTap,
     required this.animation,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

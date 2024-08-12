@@ -73,11 +73,9 @@ import 'components/body.dart';
 //   }
 // }
 
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../provider/auth_provider.dart';
 import '../welcome/welcome_screen.dart';
-import 'components/body.dart';
 
 class ClientHomeScreen extends StatefulWidget {
   static String routeName = '/client';

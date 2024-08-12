@@ -119,7 +119,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     letterSpacing: 0,
                   ),
             ),
-            actions: [],
+            actions: const [],
             centerTitle: true,
             elevation: 0,
           ),
@@ -181,7 +181,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             builder: (context) {
                               return Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: Container(
+                                child: SizedBox(
                                   height: 470,
                                   child: ChangePhotoWidget(
                                     onPhotoChanged: _updateProfilePicture,

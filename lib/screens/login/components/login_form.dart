@@ -15,7 +15,7 @@ import 'password_input_field.dart';
 class LoginForm extends StatefulWidget {
   final VoidCallback onSignUpTap;
 
-  LoginForm({
+  const LoginForm({
     super.key,
     required this.onSignUpTap,
   });

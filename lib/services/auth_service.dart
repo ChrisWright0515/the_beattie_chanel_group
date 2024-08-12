@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../firebase_options.dart';
 import '../models/user.dart';
 import 'hashing_service.dart';
 

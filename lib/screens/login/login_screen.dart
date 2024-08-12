@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
         return Scaffold(
       key: scaffoldKey,
       backgroundColor: const Color(0xFF4B39EF),
-      body: MobileBody(),
+      body: const MobileBody(),
     );
   }
 }

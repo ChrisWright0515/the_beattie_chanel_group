@@ -1185,7 +1185,6 @@ import '../../provider/auth_provider.dart';
 import '../../provider/theme_provider.dart';
 import '../../services/user_service.dart';
 import '../edit_profile/edit_profile_screen.dart';
-import '../welcome/welcome_screen.dart';
 import '../../components/theme_switcher.dart';
 import 'components/account_options_item.dart';
 import 'components/profile_header.dart';

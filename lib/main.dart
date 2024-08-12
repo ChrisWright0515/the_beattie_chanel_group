@@ -91,3 +91,30 @@ class MyApp extends StatelessWidget {
     }
   }
 }
+
+
+
+// StorageDownloadTask.swift
+// if  (self.fileURL != nil) {
+//   // Handle file downloads
+//   fetcher.destinationFileURL = self.fileURL
+//   fetcher.downloadProgressBlock = { [weak self] (bytesWritten: Int64,
+//                                                 totalBytesWritten: Int64,
+//                                                 totalBytesExpectedToWrite: Int64) in
+//       guard let self = self else { return }
+//       self.state = .progress
+//       self.progress.completedUnitCount = totalBytesWritten
+//       self.progress.totalUnitCount = totalBytesExpectedToWrite
+//       self.fire(for: .progress, snapshot: self.snapshot)
+//       self.state = .running
+//   }
+// }
+
+// StorageListTask.swift
+// if (self.pageSize != nil) {
+//   queryParams["maxResults"] = "\(self.pageSize)"
+// }
+
+// if (self.previousPageToken != nil) {
+//   queryParams["pageToken"] = self.previousPageToken
+// }

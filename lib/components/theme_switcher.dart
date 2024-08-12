@@ -113,7 +113,7 @@ import '../provider/theme_provider.dart';
 
 
 class ThemeSwitcher extends StatefulWidget {
-  const ThemeSwitcher({Key? key}) : super(key: key);
+  const ThemeSwitcher({super.key});
 
   @override
   _ThemeSwitcherState createState() => _ThemeSwitcherState();

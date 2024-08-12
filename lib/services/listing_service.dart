@@ -59,7 +59,7 @@ class ListingService {
 
   // Function to fetch the most recent listings for the current week
   Stream<List<Listing>> getRecentListings() {
-    final oneWeekAgo = DateTime.now().subtract(Duration(days: 7));
+    final oneWeekAgo = DateTime.now().subtract(const Duration(days: 7));
 
     return _firestore
         .collection('listings')

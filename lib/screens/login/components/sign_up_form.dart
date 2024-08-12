@@ -15,7 +15,7 @@ import 'phone_number_input_field.dart';
 class SignUpForm extends StatefulWidget {
   final VoidCallback onLoginTap;
 
-  SignUpForm({
+  const SignUpForm({
     super.key,
     required this.onLoginTap,
   });

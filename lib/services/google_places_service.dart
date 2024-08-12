@@ -272,7 +272,7 @@ class GooglePlacesService {
 
   Future<String> getPlacePhoto(String photoReference,
       {int? maxHeight, int? maxWidth}) async {
-    final endpoint = 'photo';
+    const endpoint = 'photo';
     final params = {
       'photoreference': photoReference,
       'key': await apiService.getApiKey(serviceName) ?? '',
@@ -301,7 +301,7 @@ class GooglePlacesService {
       if (heading != null) 'heading': heading.toString(),
       if (pitch != null) 'pitch': pitch.toString(),
       if (fov != null) 'fov': fov.toString(),
-      if (width != null) 'size': '${width}x${height}',
+      if (width != null) 'size': '${width}x$height',
     };
 
     final uri =
@@ -499,7 +499,7 @@ class Place {
           json['location'] != null ? LatLng.fromJson(json['location']) : null,
       viewport:
           json['viewport'] != null ? Viewport.fromJson(json['viewport']) : null,
-      rating: json['rating'] != null ? json['rating'].toDouble() : null,
+      rating: json['rating']?.toDouble(),
       googleMapsUri: json['googleMapsUri'],
       websiteUri: json['websiteUri'],
       reviews: json['reviews'] != null

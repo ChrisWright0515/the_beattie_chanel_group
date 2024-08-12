@@ -1,6 +1,5 @@
 
 import 'dart:convert';
-import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:image/image.dart' as img;
 import 'package:blurhash_dart/blurhash_dart.dart';
@@ -64,7 +63,7 @@ Future<List<SelectedFile>?> selectMediaWithSourceBottomSheet({
 }) async {
   createUploadMediaListTile(String label, MediaSource mediaSource) => ListTile(
     // use borderradius variable to dynamically change the border radius
-    shape: RoundedRectangleBorder(),
+    shape: const RoundedRectangleBorder(),
         title: Text(
           label,
           textAlign: TextAlign.center,
@@ -94,7 +93,7 @@ Future<List<SelectedFile>?> selectMediaWithSourceBottomSheet({
                 // add border radius to top left and top right
                 decoration: BoxDecoration(
                   color: Theme.of(context).scaffoldBackgroundColor,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                   ),

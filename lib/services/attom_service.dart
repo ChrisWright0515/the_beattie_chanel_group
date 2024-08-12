@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import '../models/listing.dart';
 import 'api_service.dart';
 
 class AttomService {

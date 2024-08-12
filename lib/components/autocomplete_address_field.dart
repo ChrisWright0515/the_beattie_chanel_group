@@ -261,7 +261,7 @@ class _AutoCompleteAddressFieldState extends State<AutoCompleteAddressField> {
       });
 
       print(response.formattedAddress);
-    } catch (e, stackTrace) {
+    } catch (e) {
       print('Error fetching place details: $e');
       setState(() {
         isAddressValidated = false;

@@ -280,9 +280,9 @@ class PropertyService {
           if (place.photos != null && place.photos!.isNotEmpty) {
             photoUrls = await Future.wait(
               place.photos!.map((photo) async {
-                if (photo.name != null && photo.name!.isNotEmpty) {
+                if (photo.name.isNotEmpty) {
                   return await _placesService.getPlacePhoto(
-                    photo.name!,
+                    photo.name,
                     maxHeight: 400,
                     maxWidth: 400,
                   );

@@ -1,22 +1,14 @@
-import 'dart:math';
 
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:photo_view/photo_view.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart'
-    as smooth_page_indicator;
 
 import '../../components/button.dart';
 import '../../constants.dart';
 import '../../models/listing.dart';
-import '../../models/user.dart';
 
 
 class PropertyDetailsScreen extends StatefulWidget {
@@ -185,11 +177,6 @@ class _PropertyDetailsScreenState extends State<PropertyDetailsScreen>
     );
   }
 
-  @override
-  void dispose() {
-
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
